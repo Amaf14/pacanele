@@ -9,11 +9,9 @@ int simbol[10];
 
 void asfisare() {
 display.setcursor(10, 10);
-display.drawRect(
-
-
-
-
+display.drawRect(10, 10, 10, 10, BLACK);
+display.drawRect(20, 10, 10, 10, BLACK);
+display.drawRect(30, 10, 10, 10, BLACK);
 
 
 
