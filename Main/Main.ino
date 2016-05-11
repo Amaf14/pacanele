@@ -13,7 +13,7 @@ digit[2]=simbol[random(0, 9)];
 if(numar==100 && digit[1]==digit[2])
    digit[3]=digit[2];
 else
-   digit[3]=random(0, 9);
+   digit[3]=simbol[random(0, 9)];
 }
 
 
@@ -34,6 +34,7 @@ display.display();
 }
 
 void logo() {
+display.cleardisplay();
 display.setcursor(10, 20);
 display.setcolor(BLACK);
 display.print(F("Pacanele"));
