@@ -3,3 +3,32 @@
 #include <Adafruit_PCD8544.h>
 
 Adafruit_PCD8544 display = Adafruit_PCD8544(4, 5, 6, 7, 8);
+
+int simbol[10];
+
+
+void asfisare() {
+display.setcursor(10, 10);
+display.drawRect(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void setup() {
+display.begin();
+display.setcontrast(50);
+display.cleardisplay();
+}
+
+void loop() {
