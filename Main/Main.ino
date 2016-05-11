@@ -5,6 +5,22 @@
 Adafruit_PCD8544 display = Adafruit_PCD8544(4, 5, 6, 7, 8);
 
 int simbol[10];
+int numar, digit[3];
+
+void generator() {
+digit[1]=simbol[random(0, 9)];
+digit[2]=simbol[random(0, 9)];
+if(numar==100 && digit[1]==digit[2])
+   digit[3]=digit[2];
+else
+   digit[3]=random(0, 9);
+}
+
+
+
+
+
+
 
 
 void asfisare() {
