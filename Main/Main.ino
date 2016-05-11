@@ -11,10 +11,12 @@ bool end=false;
 void generator() {
 digit[1]=simbol[random(0, 9)];
 digit[2]=simbol[random(0, 9)];
-if(numar==100 && digit[1]==digit[2])
-   digit[3]=digit[2];
-else
+if(numar==100 && digit[1]==digit[2]) {
+   numar=0;
+   digit[3]=digit[2];}
+else {
    digit[3]=simbol[random(0, 9)];
+   numar++;}
 }
 
 
