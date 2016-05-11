@@ -17,7 +17,12 @@ display.print( F("Spin it!"));
 display.display();
 }
 
-
+void logo() {
+display.setcursor(10, 20);
+display.setcolor(BLACK);
+display.print(F("Pacanele"));
+display.display();
+}
 
 
 
