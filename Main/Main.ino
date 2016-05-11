@@ -4,7 +4,7 @@
 
 Adafruit_PCD8544 display = Adafruit_PCD8544(4, 5, 6, 7, 8);
 
-int simbol[10];
+int simbol[]={$, 7, K, T, ;
 int numar, digit[3];
 bool end=false;
 
@@ -19,16 +19,16 @@ else
 
 
 
+void afisare_digiti() {
+display.setcursor(, 10);
 
 
 
 
-
-void asfisare() {
-display.setcursor(10, 10);
+void asfisare_decor() {
 display.drawRect(10, 10, 7, 10, BLACK);
-display.drawRect(20, 10, 7, 10, BLACK);
-display.drawRect(30, 10, 7, 10, BLACK);
+display.drawRect(10, 20, 7, 10, BLACK);
+display.drawRect(10, 30, 7, 10, BLACK);
 display.setcursor(40, 30);
 display.print( F("Spin it!"));
 display.display();
@@ -36,8 +36,8 @@ display.display();
 
 void logo() {
 display.cleardisplay();
-display.setcursor(10, 20);
-display.setcolor(BLACK);
+display.setCursor(10, 20);
+display.setTextColor(BLACK);
 display.print(F("Pacanele"));
 display.display();
 }
