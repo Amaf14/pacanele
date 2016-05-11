@@ -6,6 +6,7 @@ Adafruit_PCD8544 display = Adafruit_PCD8544(4, 5, 6, 7, 8);
 
 int simbol[10];
 int numar, digit[3];
+bool end=false;
 
 void generator() {
 digit[1]=simbol[random(0, 9)];
@@ -52,3 +53,6 @@ display.cleardisplay();
 }
 
 void loop() {
+
+while(end!=true) {
+  i
