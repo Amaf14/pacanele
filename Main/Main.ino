@@ -30,30 +30,28 @@ display.setcursor(, 10);
 
 
 void asfisare_decor() {
-display.drawRect(10, 10, 7, 10, BLACK);
-display.drawRect(10, 20, 7, 10, BLACK);
-display.drawRect(10, 30, 7, 10, BLACK);
-display.setcursor(40, 30);
-display.print( F("Spin it!"));
-display.display();
+   display.drawRect(10, 10, 7, 10, BLACK);
+   display.drawRect(10, 20, 7, 10, BLACK);
+   display.drawRect(10, 30, 7, 10, BLACK);
+   display.setcursor(40, 30);
+   display.print( F("Spin it!"));
+   display.display();
 }
 
 void logo() {
-display.cleardisplay();
-display.setCursor(10, 20);
-display.setTextColor(BLACK);
-display.print(F("Pacanele"));
-display.display();
+   display.cleardisplay();
+   display.setCursor(10, 20);
+   display.setTextColor(BLACK);
+   display.print(F("Pacanele"));
+   display.display();
 }
-
-
 
 
 
 void setup() {
-display.begin();
-display.setcontrast(50);
-display.cleardisplay();
+   display.begin();
+   display.setcontrast(50);
+   display.cleardisplay();
 }
 
 void loop() {
