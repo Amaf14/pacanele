@@ -4,7 +4,7 @@
 
 Adafruit_PCD8544 display = Adafruit_PCD8544(4, 5, 6, 7, 8);
 
-int simbol[]={$, 7, K, T, ;
+int simbol[]={'$', '7', 'K', 'T'};
 int numar, digit[3];
 bool end=false;
 
