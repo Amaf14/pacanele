@@ -23,16 +23,21 @@ void generator() {
 
 
 
-void afisare_digiti() {
-display.setcursor(, 10);
+void afisare_digiti(int poz, int valoare) {
+   display.setCursor(poz*10+5, 10);
+   display.setTextColor(WHITE);
+   display.setTextSize(2);
+   display.print(valoare);
+   display.display();
+}
 
 
 
 
 void asfisare_decor() {
-   display.drawRect(10, 10, 7, 10, BLACK);
-   display.drawRect(10, 20, 7, 10, BLACK);
-   display.drawRect(10, 30, 7, 10, BLACK);
+   display.fillRect(10, 10, 7, 10, BLACK);
+   display.fillRect(10, 20, 7, 10, BLACK);
+   display.fillRect(10, 30, 7, 10, BLACK);
    display.setcursor(40, 30);
    display.print( F("Spin it!"));
    display.display();
